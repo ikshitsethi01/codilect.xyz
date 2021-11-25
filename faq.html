@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Codilect - FAQs</title>
+
+    <style>
+
+        @media screen and (min-width: 768px) {
+            .offcanvas {
+                margin-right: 40px;
+                font-size: 20px;
+            }
+
+            section h1 {
+                color: black;
+                text-align: center;
+                font-size: 40px;
+            }
+        }
+
+
+        .h-100 {
+            height: 85% !important;
+        }
+
+        .card {
+            margin: 30px;
+        }
+
+        .custom-toggler {
+            background-color: #1877f2;
+        }
+
+        @media(max-width: 991.5px) {
+            .offcanvas ul {
+                justify-content: start !important;
+            }
+
+
+        }
+
+
+        .offcanvas-end {
+            top: 0;
+            right: 0;
+            width: 425px;
+            border-left: 1px solid rgba(0, 0, 0, .2);
+            padding: 5px;
+            transform: translateX(100%);
+        }
+
+
+        section {
+            margin: 10vh 5vw 10vh 5vw;
+        }
+
+        section h1 {
+            color: black;
+            text-align: left;
+            font-size: 25px;
+            padding-left: 5px;
+        }
+
+        .accordion-item {
+            position: relative;
+            top: 30px;
+            margin: 15px 0;
+        }
+
+        .accordion-body {
+            background: white
+        }
+
+        .accordion-button {
+            border-radius: 3px;
+        }
+
+        .accordion-button::after {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5MC42ODggNDkwLjY4OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGxpbmsgdHlwZT0idGV4dC9jc3MiIHJlbD0ic3R5bGVzaGVldCIgaWQ9ImRhcmstbW9kZS1jdXN0b20tbGluayI+PC9saW5rPjxsaW5rIHR5cGU9InRleHQvY3NzIiByZWw9InN0eWxlc2hlZXQiIGlkPSJkYXJrLW1vZGUtZ2VuZXJhbC1saW5rIj48L2xpbms+PHN0eWxlIGxhbmc9ImVuIiB0eXBlPSJ0ZXh0L2NzcyIgaWQ9ImRhcmstbW9kZS1jdXN0b20tc3R5bGUiPjwvc3R5bGU+PHN0eWxlIGxhbmc9ImVuIiB0eXBlPSJ0ZXh0L2NzcyIgaWQ9ImRhcmstbW9kZS1uYXRpdmUtc3R5bGUiPjwvc3R5bGU+CjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9IiIgZD0iTTQ3Mi4zMjgsMTIwLjUyOUwyNDUuMjEzLDM0Ny42NjVMMTguMDk4LDEyMC41MjljLTQuMjM3LTQuMDkzLTEwLjk5LTMuOTc1LTE1LjA4MywwLjI2MiAgYy0zLjk5Miw0LjEzNC0zLjk5MiwxMC42ODcsMCwxNC44MmwyMzQuNjY3LDIzNC42NjdjNC4xNjUsNC4xNjQsMTAuOTE3LDQuMTY0LDE1LjA4MywwbDIzNC42NjctMjM0LjY2NyAgYzQuMjM3LTQuMDkzLDQuMzU0LTEwLjg0NSwwLjI2Mi0xNS4wODNjLTQuMDkzLTQuMjM3LTEwLjg0NS00LjM1NC0xNS4wODMtMC4yNjJjLTAuMDg5LDAuMDg2LTAuMTc2LDAuMTczLTAuMjYyLDAuMjYyICBMNDcyLjMyOCwxMjAuNTI5eiIgZmlsbD0iI2ZmYzEwNyIgZGF0YS1vcmlnaW5hbD0iI2ZmYzEwNyI+PC9wYXRoPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Ik0yNDUuMjEzLDM3My40MTVjLTIuODMxLDAuMDA1LTUuNTQ4LTEuMTE1LTcuNTUyLTMuMTE1TDIuOTk0LDEzNS42MzNjLTQuMDkzLTQuMjM3LTMuOTc1LTEwLjk5LDAuMjYyLTE1LjA4MyAgYzQuMTM0LTMuOTkyLDEwLjY4Ny0zLjk5MiwxNC44MiwwbDIyNy4xMzYsMjI3LjExNWwyMjcuMTE1LTIyNy4xMzZjNC4wOTMtNC4yMzcsMTAuODQ1LTQuMzU0LDE1LjA4My0wLjI2MiAgYzQuMjM3LDQuMDkzLDQuMzU0LDEwLjg0NSwwLjI2MiwxNS4wODNjLTAuMDg2LDAuMDg5LTAuMTczLDAuMTc2LTAuMjYyLDAuMjYyTDI1Mi43NDQsMzcwLjI3OSAgQzI1MC43NDgsMzcyLjI4MSwyNDguMDM5LDM3My40MDgsMjQ1LjIxMywzNzMuNDE1eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+);
+        }
+
+        .custom-toggler {
+            background-color: #1877f2;
+        }
+
+        @media(max-width: 991.5px) {
+            .offcanvas ul {
+                justify-content: start !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-3 mt-0 border-bottom">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4">Codilect</span>
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-4 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Courses</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign in</button>
+                    <!-- <button type="button" class="btn btn-primary">Change theme</button> -->
+                </div>
+            </header>
+        </div>
+    </nav>
+
+    <div class="px-4 pt-5 my-5 text-center ">
+        <h1 class="display-4 fw-bold">FAQ - Codilect</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptates laborum cum
+                commodi. Corporis ipsam, id velit minus aperiam maxime quaerat omnis quam qui, debitis placeat cum quod
+                ut doloribus!</p>
+        </div>
+    </div>
+    <section>
+        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item bg-light text-dark">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed bg-light text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        What is Codilect?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, quas?
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-light text-dark">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed bg-light text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        What languages do we teach?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        We teach all the languages that are mentioned on the Courses Page!
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-light text-dark">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed bg-light text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        What are the charges?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit magnam nam ea nulla possimus exercitationem ex labore, quia aliquam.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-light text-dark">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed bg-light text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        How can I apply for the courses?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        You can apply in this form, Link - <a href=".">Click
+                            here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-light text-dark">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed bg-light text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Which platforms can I get help from?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        For your personal doubts and making your concepts crystal clear, we use Google Meet, Discord DM ,
+                        voice call on our Discord Server,
+                        and Zoom to help you out in any way necessary.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-light text-dark">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed bg-light text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        What is the minimum age requirement to start learning?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        We believe that there is no age to learn something new. As we know, learning a new skill doesn't
+                        have an age, and that
+                        it is productive and wise to learn one. Coding isn't just for those people who want to learn how
+                        to code but also for
+                        anyone who's looking to learn a new skill and here at The Intellect, we make it happen, and
+                        hence, we have no min or
+                        max-age to join in.
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
